@@ -12,7 +12,6 @@ df = pd.read_csv(file_path)  # Read the dataset into a pandas
 # Selecting features for clustering
 X = df[['TV', 'radio', 'newspaper']].values  # Convert independent variables to NumPy array
 
-# Perform hierarchical clustering using complete linkage
 linkage_matrix = linkage(X, method='complete')  # Compute linkage matrix using complete linkage
 
 # Plot the dendrogram
